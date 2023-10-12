@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="BotoncicosVerdeAzules">
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:backgroundTint">#009688</item>
+        <item name="rippleColor">#4DB6AC</item>
+        <item name="android:shadowColor">#004D40</item>
+        <item name="android:shadowDy">5</item>
+        <item name="android:shadowRadius">20</item>
+        <item name="android:elevation">5dp</item>
+        <item name="android:padding">0dp</item>
+        <item name="android:insetTop">0dp</item>
+        <item name="android:insetBottom">0dp</item>
+        <item name="android:insetRight">0dp</item>
+        <item name="android:insetLeft">0dp</item>
+        <item name="android:textSize">25dp</item>
+        <item name="android:stateListAnimator">@null</item>
+    </style>
+</resources>
