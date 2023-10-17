@@ -107,13 +107,13 @@
             android:layout_height="0dp"
             android:layout_marginStart="5dp"
             android:layout_marginTop="5dp"
-            android:layout_marginEnd="10dp"
+            android:layout_marginEnd="5dp"
             android:layout_marginBottom="5dp"
             android:backgroundTint="#009688"
             android:onClick="anadeCaracter"
             android:text="6"
             app:layout_constraintBottom_toTopOf="@+id/buttonNumero9"
-            app:layout_constraintEnd_toStartOf="@+id/buttonSimboloSuma"
+            app:layout_constraintEnd_toStartOf="@+id/buttonSimboloMultiplicacion"
             app:layout_constraintStart_toEndOf="@+id/buttonNumero5"
             app:layout_constraintTop_toBottomOf="@+id/buttonNumero3" />
 
@@ -190,7 +190,7 @@
             android:layout_height="0dp"
             android:layout_marginStart="5dp"
             android:layout_marginTop="5dp"
-            android:layout_marginEnd="10dp"
+            android:layout_marginEnd="5dp"
             android:layout_marginBottom="10dp"
             android:backgroundTint="#009688"
             android:onClick="anadeCaracter"
@@ -223,20 +223,37 @@
             android:layout_height="0dp"
             android:layout_marginStart="5dp"
             android:layout_marginBottom="5dp"
+            android:autoSizeTextType="none"
             android:backgroundTint="#00796B"
             android:onClick="anadeCaracter"
             android:text="+"
-            app:layout_constraintBottom_toTopOf="@+id/buttonSimboloResta"
+            app:layout_constraintBottom_toTopOf="@+id/buttonSimboloMultiplicacion"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toEndOf="@+id/buttonNumero3"
             app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/buttonSimboloMultiplicacion"
+            style="@style/BotoncicosVerdeAzules"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:backgroundTint="#00796B"
+            android:onClick="anadeCaracter"
+            android:text="*"
+            app:layout_constraintBottom_toTopOf="@+id/buttonSimboloResta"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/buttonNumero6"
+            app:layout_constraintTop_toBottomOf="@+id/buttonSimboloSuma" />
 
         <Button
             android:id="@+id/buttonSimboloResta"
             style="@style/BotoncicosVerdeAzules"
             android:layout_width="0dp"
             android:layout_height="0dp"
-            android:layout_marginStart="10dp"
+            android:layout_marginStart="5dp"
             android:layout_marginTop="5dp"
             android:layout_marginBottom="10dp"
             android:backgroundTint="#00796B"
@@ -244,8 +261,8 @@
             android:text="-"
             app:layout_constraintBottom_toTopOf="@+id/buttonSimboloIgual"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toEndOf="@+id/buttonNumero6"
-            app:layout_constraintTop_toBottomOf="@+id/buttonSimboloSuma" />
+            app:layout_constraintStart_toEndOf="@+id/buttonNumero9"
+            app:layout_constraintTop_toBottomOf="@+id/buttonSimboloMultiplicacion" />
 
         <Button
             android:id="@+id/buttonSimboloBorra"
